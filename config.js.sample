@@ -1,0 +1,7 @@
+var broker = {
+	"hostname": "mqtt.tiefpunkt.com",
+	"port": 18883,
+	"user": "MQTT_USERNAME",
+	"password": "MQTT_PASSWORD"
+	}
+	
