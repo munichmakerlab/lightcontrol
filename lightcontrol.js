@@ -27,12 +27,12 @@ function onConnectionLost(responseObject) {
 
 function switchOn(name) {
 	var message = new Messaging.Message("1");
-	message.destinationName = "mumalab/room/lights/" + name + "/state";
+	message.destinationName = prefix + name + "/state";
 	client.send(message); 
 }
 
 function switchOff(name) {
 	message = new Messaging.Message("0");
-	message.destinationName = "mumalab/room/lights/" + name + "/state";
+	message.destinationName = prefix + name + "/state";
 	client.send(message); 
 }
